@@ -2,7 +2,7 @@
 using System.Collections;
 
 [ExecuteInEditMode, RequireComponent(typeof(Camera))]
-public class CavinetProjection : MonoBehaviour
+public class CabinetProjection : MonoBehaviour
 {
     public float angle = 45.0f;
     public float zScale = 0.2f;
