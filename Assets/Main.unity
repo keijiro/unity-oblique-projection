@@ -545,8 +545,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b41deb8800617457aa756ba6f1c76a16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  angle: 38.9300003
-  zScale: .810000002
+  angle: 34
+  zScale: .700999975
   zOffset: -5
 --- !u!1 &1352113753
 GameObject:

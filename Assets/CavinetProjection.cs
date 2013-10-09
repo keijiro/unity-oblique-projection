@@ -2,13 +2,13 @@
 using System.Collections;
 
 [ExecuteInEditMode, RequireComponent(typeof(Camera))]
-public class ObliqueProjection : MonoBehaviour
+public class CavinetProjection : MonoBehaviour
 {
     public float angle = 45.0f;
     public float zScale = 0.2f;
     public float zOffset = 5.0f;
 
-    void Update ()
+    public void Apply ()
     {
         camera.orthographic = true;
         var orthoHeight = camera.orthographicSize;
@@ -20,5 +20,15 @@ public class ObliqueProjection : MonoBehaviour
         m [0, 3] = -zOffset * m [0, 2];
         m [1, 3] = -zOffset * m [1, 2];
         camera.projectionMatrix = m;
+    }
+
+    void OnEnable ()
+    {
+        Apply ();
+    }
+
+    void OnDisable ()
+    {
+        camera.ResetProjectionMatrix ();
     }
 }
