@@ -1,24 +1,23 @@
-unity-cabinet-projection
+unity-oblique-projection
 ========================
 
 ![screenshot]
-(https://github.com/keijiro/unity-cabinet-projection/raw/gh-pages/screenshot.png)
+(https://github.com/keijiro/unity-oblique-projection/raw/gh-pages/screenshot.png)
 
-This is a simple script which provides a cabinet projection (a kind of
-[oblique projection](http://en.wikipedia.org/wiki/Oblique_projection))
-matrix for an attached camera.
+This is a C# script which provides [an oblique projection matrix]
+(http://en.wikipedia.org/wiki/Oblique_projection) for an attached camera.
 
 Usage
 -----
 
-1. Import CabinetProjection.cs.
-1. Import CabinetProjectionEditor.cs into the “Editor” directory.
-1. Attach CabinetProjection to a camera.
+1. Import ObliqueProjection.cs.
+1. Import ObliqueProjectionEditor.cs into the “Editor” directory.
+1. Attach ObliqueProjection to a camera.
 
-There are three parameters in CabinetProjection.
+There are three parameters in ObliqueProjection.
 
 ![inspector]
-(https://github.com/keijiro/unity-cabinet-projection/raw/gh-pages/inspector.png)
+(https://github.com/keijiro/unity-oblique-projection/raw/gh-pages/inspector.png)
 
 - Angle: the angle of the third axis.
 - Z Scale: the scale factor for the third axis.
@@ -26,4 +25,4 @@ There are three parameters in CabinetProjection.
   compensate the position of the camera along the third axis.
 
 For a detailed example, see [the test branch]
-(https://github.com/keijiro/unity-cabinet-projection/tree/test).
+(https://github.com/keijiro/unity-oblique-projection/tree/test).
