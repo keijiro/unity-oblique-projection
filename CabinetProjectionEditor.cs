@@ -2,12 +2,12 @@
 using UnityEditor;
 using System.Collections;
 
-[CustomEditor(typeof(CavinetProjection))]
-public class CavinetProjectionEditor : Editor
+[CustomEditor(typeof(CabinetProjection))]
+public class CabinetProjectionEditor : Editor
 {
     public override void OnInspectorGUI ()
     {
-        var t = target as CavinetProjection;
+        var t = target as CabinetProjection;
 
         GUI.changed = false;
         t.angle = EditorGUILayout.Slider ("Angle", t.angle, -360.0f, 360.0f);
